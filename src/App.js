@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Box from './box/box.js'
+import Contador from './contador/contador.js'
 
 
 class App extends React.Component {
@@ -8,9 +8,7 @@ class App extends React.Component {
     data: [],
   } 
     
-  
   _add = () => {
-    
     let  data  = this.state.data;
     let newData = [...data, 0]
     console.log(newData)
@@ -65,8 +63,7 @@ class App extends React.Component {
           <div>
             <h2>Contadores</h2>
             {this.state.data.map ((item, index) => { 
-
-              return (<Box  key={index}
+              return (<Contador  key={index}
                             index={index}
                             number={item} 
                             removeBox={this.removeBox} 
@@ -74,7 +71,6 @@ class App extends React.Component {
                             restar = {this.restar}
                       />)})}
           </div>
-            
         </header>
       </div>
     )

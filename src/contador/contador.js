@@ -1,9 +1,9 @@
 import React from 'react'
-import css from './box.module.css'
+import css from './contador.module.css'
 
 
 
-class Box extends React.Component {
+class Contador extends React.Component {
 
     
 
@@ -44,4 +44,4 @@ class Box extends React.Component {
         )       
     }
 }
-export default Box
+export default Contador
